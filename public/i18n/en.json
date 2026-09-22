@@ -7,5 +7,11 @@
   "about": {
     "title": "About Us",
     "content": "ACME Learning Center is an Education Platform."
+  },
+
+  "page-not-found": {
+    "title": "Page Not Found",
+    "content": "The path <strong>{{invalid_path}}</strong> is not valid.",
+    "go-home": "Go to Home"
   }
 }
