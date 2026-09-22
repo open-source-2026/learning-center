@@ -2,5 +2,10 @@
   "home": {
     "title": "Bienvenido",
     "content": "Bienvenido a la página de inicio."
+  },
+
+  "about": {
+    "title": "Sobre nosotros",
+    "content": "ACME Learning Center es una plataforma educativa."
   }
 }

@@ -2,5 +2,10 @@
   "home": {
     "title": "Welcome",
     "content": "Welcome to the Home page."
+  },
+
+  "about": {
+    "title": "About Us",
+    "content": "ACME Learning Center is an Education Platform."
   }
 }
