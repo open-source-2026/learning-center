@@ -13,5 +13,10 @@
     "title": "Page Not Found",
     "content": "The path <strong>{{invalid_path}}</strong> is not valid.",
     "go-home": "Go to Home"
+  },
+
+  "option": {
+    "home": "Home",
+    "about": "About"
   }
 }
