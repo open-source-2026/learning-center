@@ -1,10 +1,20 @@
 import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
+import { provideHttpClient } from '@angular/common/http';
+import { provideTranslateService } from '@ngx-translate/core';
+import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideRouter(routes)
+    provideRouter(routes),
+    provideHttpClient(), // add provideHttpClient() to the providers array
+    provideTranslateService({ // add provideTranslateService() to the providers array
+      loader: provideTranslateHttpLoader({
+        prefix: './i18n/', suffix: '.json'
+      }),
+      fallbackLang: 'en'
+    })
   ]
 };
